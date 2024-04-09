@@ -155,6 +155,7 @@ class Ui_PlotTab(object):
 
         self.show_initial_fit = QCheckBox(self.groupBox)
         self.show_initial_fit.setObjectName(u"show_initial_fit")
+        self.show_initial_fit.setStyleSheet(u"QCheckBox::indicator { width: 20px; height: 20px;}")
         self.show_initial_fit.setChecked(True)
 
         self.formLayout_4.setWidget(1, QFormLayout.FieldRole, self.show_initial_fit)
@@ -207,6 +208,7 @@ class Ui_PlotTab(object):
 
         self.use_fit_domain = QCheckBox(self.groupBox_4)
         self.use_fit_domain.setObjectName(u"use_fit_domain")
+        self.use_fit_domain.setStyleSheet(u"QCheckBox::indicator { width: 20px; height: 20px;}")
 
         self.horizontalLayout_3.addWidget(self.use_fit_domain)
 

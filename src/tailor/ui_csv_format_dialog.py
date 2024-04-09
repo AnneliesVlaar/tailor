@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'csv_format_dialog.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.3.2
+## Created by: Qt User Interface Compiler version 6.6.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -59,6 +59,7 @@ class Ui_CsvFormatDialog(object):
 
         self.use_header_box = QCheckBox(CsvFormatDialog)
         self.use_header_box.setObjectName(u"use_header_box")
+        self.use_header_box.setStyleSheet(u"QCheckBox::indicator { width: 20px; height: 20px;}")
         self.use_header_box.setChecked(True)
 
         self.formLayout.setWidget(2, QFormLayout.FieldRole, self.use_header_box)

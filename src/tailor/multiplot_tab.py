@@ -105,6 +105,7 @@ class MultiPlotTab(QtWidgets.QWidget):
         for plot, color in zip(plots, self._color):
             is_enabled = QtWidgets.QCheckBox(plot.name)
             is_enabled.setObjectName("is_enabled_checkbox")
+            is_enabled.setStyleSheet(u"QCheckBox::indicator { width: 20px; height: 20px;}")
             plot_label = QtWidgets.QLineEdit(plot.name)
             plot_label.setObjectName("plot_label")
             color_button = ColorButton(color=color)

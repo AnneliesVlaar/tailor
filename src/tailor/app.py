@@ -85,7 +85,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.setWindowIcon(
             QtGui.QIcon(str(resources.files("tailor.resources") / "tailor.png"))
         )
-
+        
         self.connect_menu_items()
         self.connect_ui_events()
         self.setup_keyboard_shortcuts()
@@ -1282,6 +1282,7 @@ class Application(QtWidgets.QApplication):
         super().__init__()
 
         self.app = MainWindow(add_sheet=True)
+        self.setStyle("fusion")
         self.app.show()
         # Preflight
         if update_check:

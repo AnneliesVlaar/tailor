@@ -447,6 +447,7 @@ class PlotTab(QtWidgets.QWidget):
             max_box.setObjectName("max")
             max_box._parameter = param
             is_fixed_checkbox = QtWidgets.QCheckBox("Fixed", objectName="is_fixed")
+            is_fixed.setStyleSheet(u"QCheckBox::indicator { width: 20px; height: 20px;}")
             is_fixed_checkbox._parameter = param
             create_leq_sign = lambda: QtWidgets.QLabel(
                 "≤", alignment=QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter
