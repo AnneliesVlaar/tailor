@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1200, 700)
+        MainWindow.setGeometry(-2500,-50,960,540)
         self.actionAdd_column = QAction(MainWindow)
         self.actionAdd_column.setObjectName(u"actionAdd_column")
         self.actionAdd_calculated_column = QAction(MainWindow)
